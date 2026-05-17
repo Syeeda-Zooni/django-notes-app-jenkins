@@ -7,6 +7,7 @@ pipeline{
     stages{
         stage('Code'){
             steps{
+                echo"Cloning the source code"
                 script{
                     git_clone("https://github.com/Syeeda-Zooni/django-notes-app-jenkins.git","main")
                 }
